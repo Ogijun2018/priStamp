@@ -12,9 +12,7 @@ import {
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
-import SettingScreen from '../screens/SettingScreen';
 import WebviewScreen from '../screens/WebviewScreen';
-import Header from '../components/Header';
 import { initialCategory } from '../components/util';
 
 const { width } = Dimensions.get('window');
@@ -23,12 +21,11 @@ const Stack = createStackNavigator(
   {
     Home: {
       screen: HomeScreen,
-      navigationOptions: ({ navigation }) => ({
+      navigationOptions: () => ({
         headerTitle: (
           <View>
             <StatusBar barStyle="dark-content" />
             <Text>priStamp</Text>
-            {/* <Header onPress={() => navigation.navigate('Setting')} /> */}
           </View>
         ),
         headerTintColor: 'black',
@@ -36,20 +33,6 @@ const Stack = createStackNavigator(
     },
     Detail: {
       screen: DetailScreen,
-      navigationOptions: () => ({
-        headerTitle: (
-          <View>
-            <StatusBar barStyle="dark-content" />
-            <View style={styles.containerDetail}>
-              <Text>priStamp</Text>
-            </View>
-          </View>
-        ),
-        headerTintColor: 'black',
-      }),
-    },
-    Setting: {
-      screen: SettingScreen,
       navigationOptions: () => ({
         headerTitle: (
           <View>

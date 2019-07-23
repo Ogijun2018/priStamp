@@ -3,11 +3,8 @@ import {
   StyleSheet,
   View,
   ScrollView,
-  TouchableOpacity,
-  Image,
 } from 'react-native';
 import Button from '../components/CategoryButton';
-import MakeCategoryModal from '../components/MakeCategoryModal';
 import { beige } from '../components/util';
 
 export default class HomeScreen extends React.Component {
@@ -48,25 +45,6 @@ export default class HomeScreen extends React.Component {
               );
             })}
           </View>
-          {/* <View style={{ alignItems: 'center', backgroundColor: beige }}>
-            <TouchableOpacity
-              style={{ padding: 20, marginBottom: 10 }}
-              onPress={() => {
-                this.openModal();
-              }}
-            >
-              <Image
-                style={{ resizeMode: 'contain', width: 50, height: 50 }}
-                source={require('../images/plus.png')}
-              />
-            </TouchableOpacity>
-            <MakeCategoryModal
-              visible={this.state.modalVisible}
-              animationType={'fade'}
-              onRequestClose={() => this.closeModal()}
-              addNewCategory={this.props.screenProps.addNewCategory}
-            />
-          </View> */}
         </ScrollView>
       </React.Fragment>
     );

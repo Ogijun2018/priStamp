@@ -23,6 +23,7 @@ export default class Medal extends React.Component {
     this.setState({ selectedMedal: null });
   }
 
+  //TODO: 未完成
   onPressTwitterButton = (kind, storyCount) => {
     const { navigate } = this.props.navigation;
     this.closeModal();

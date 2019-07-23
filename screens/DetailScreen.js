@@ -48,11 +48,11 @@ export default class DetailScreen extends React.Component {
     const { navigate } = this.props.navigation;
     let Url;
     if(kind === 'プリティーリズム オーロラドリーム' || kind === 'プリティーリズム ディアマイフューチャー' || kind === 'プリティーリズム レインボーライブ'){
-      Url = 'https://twitter.com/intent/tweet?hashtags=prettyrhythm,prickathon';
+      Url = 'https://twitter.com/intent/tweet?hashtags=prettyrhythm';
     }else if(kind === 'プリパラ season.1' || kind === 'プリパラ season.2' || kind === 'プリパラ season.3' || kind === 'アイドルタイムプリパラ'){
-      Url = 'https://twitter.com/intent/tweet?hashtags=pripara,prickathon';
+      Url = 'https://twitter.com/intent/tweet?hashtags=pripara';
     }else{
-      Url = 'https://twitter.com/intent/tweet?hashtags=prichan,prickathon';
+      Url = 'https://twitter.com/intent/tweet?hashtags=prichan';
     }
     console.log(Url);
     this.setState({modalVisible: false});
@@ -73,21 +73,6 @@ export default class DetailScreen extends React.Component {
         medal => medal.type === category
       );
     }
-
-    // let Triangles = [];
-    // for (let i = 0; i < 15; i++) {
-    //   Triangles.push(<View key={i} style={[styles.triangle]} />);
-    // }
-
-    // let TrianglesReverse = [];
-    // for (let i = 0; i < 15; i++) {
-    //   TrianglesReverse.push(
-    //     <View
-    //       key={i + 15}
-    //       style={[styles.triangle, { transform: [{ rotate: '180deg' }] }]}
-    //     />
-    //   );
-    // }
 
     return (
       <View style={styles.container}>
@@ -163,7 +148,6 @@ export default class DetailScreen extends React.Component {
             </React.Fragment>
           </View>
           <View style={styles.bottom}>
-            {/* <View style={styles.trianglesRow}>{Triangles}</View> */}
             <View style={styles.medalList}>
               <Text style={styles.text}>
                 {medals.length < 51 ? (
@@ -189,7 +173,6 @@ export default class DetailScreen extends React.Component {
                 <MedalList medalData={medals} category={category} onPressTwitterButton={() => this.onPressTwitterButton(category, medals.length)}/>
               </ScrollView>
             </View>
-            {/* <View style={styles.trianglesRow}>{TrianglesReverse}</View> */}
           </View>
         </View>
       </View>

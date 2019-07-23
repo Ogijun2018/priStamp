@@ -12,34 +12,13 @@ import { beige, white, gray } from '../components/util';
 const { height, width } = Dimensions.get('window');
 
 const Button = ({ onPress, buttonKind, icon, getMedalCount }) => {
-  let medal = [];
   let remains = 51 - getMedalCount;
-  for (let i = 0; i < getMedalCount; i++) {
-    medal.push(
-      <Image
-        key={i}
-        style={styles.medalImage}
-        source={require('../images/medal.png')}
-      />
-    );
-  }
-  for (let j = 0; j < remains; j++) {
-    medal.push(
-      <Image
-        key={getMedalCount + j}
-        style={styles.medalImage}
-        source={require('../images/medalEmpty.png')}
-      />
-    );
-  }
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={onPress} style={styles.button}>
         <View style={styles.buttonLeftSide}>
           <Text style={styles.category}>{buttonKind}</Text>
-          {/* <View style={styles.circle}> */}
             <Image style={styles.categoryImage} source={icon} />
-          {/* </View> */}
         </View>
         <View style={styles.buttonRightSide}>
           {remains > 0 ? (
@@ -51,7 +30,6 @@ const Button = ({ onPress, buttonKind, icon, getMedalCount }) => {
           ) : (
             <Text style={styles.goodJob}>ゴールおめでとう！</Text>
           )}
-          {/* <View style={styles.medalList}>{medal}</View> */}
         </View>
       </TouchableOpacity>
     </View>

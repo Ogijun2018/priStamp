@@ -10,19 +10,10 @@ const initialCategory = [
   { value: 'キラッとプリ☆チャン season.2', uri: require('../images/prichan_logo.jpg') },
 ];
 
-const category = [
-  // require('../images/pripara_logo.jpg'),
-  // require('../images/hamigaki.png'),
-  // require('../images/okataduke.png'),
-  // require('../images/toilet.png'),
-  // require('../images/aisatu.png'),
-  // require('../images/clothes.png'),
-];
-
 const beige = '#EC008C'; //ベージュ
 const white = '#FFF'; //ホワイト
 const gray = '#D3D3D3'; //グレー
 const paleGray = '#EFEFEF'; //淡いグレー
 const opacity = '#ed77bd'; //不透明
 
-export { initialCategory, category, beige, white, gray, paleGray, opacity };
+export { initialCategory, beige, white, gray, paleGray, opacity };

@@ -40,14 +40,10 @@ const CommonModal = ({
               <View style={{ flex: 2 }}>
                 <Image
                   resizeMode="contain"
-                  style={styles.doneMedal}
+                  style={styles.goal}
                   source={require('../images/mirei_goal.jpg')}
                 />
               </View>
-              {/* <Image
-                style={styles.ribbon}
-                source={require('../images/modalRibbon.png')}
-              /> */}
               <View style={styles.contents}>
                 <Text style={styles.medalCategory}>
                   {category}{'\n'}{medalCount}話を視聴しました！
@@ -57,9 +53,6 @@ const CommonModal = ({
                 ) : (
                   <Text style={styles.today}>{today}</Text>
                 )}
-                {/* <Text style={styles.category}>
-                  {category}
-                </Text> */}
                 <TouchableOpacity onPress={onRequestTwitter} style={{marginTop:50}}>
                   <Image
                     resizeMode="contain"
@@ -75,18 +68,14 @@ const CommonModal = ({
                 <Image
                   resizeMode="contain"
                   style={styles.goalImage}
-                  source={require('../images/goal.png')}
+                  source={require('../images/mirei_goal.jpg')}
                 />
               </View>
-              {/* <Image
-                style={styles.ribbon}
-                source={require('../images/goalRibbon.png')}
-              /> */}
               <View style={styles.contents}>
                 <Text style={styles.medalCategory}>よくできました！</Text>
                 <Text style={styles.today}>{today}</Text>
                 <Text style={styles.category}>
-                  {category}メダル10こ あつめたよ！
+                  {category}を最終話まで見ました！
                 </Text>
               </View>
             </React.Fragment>
@@ -117,7 +106,7 @@ const styles = StyleSheet.create({
     width: '80%',
     height: '60%',
   },
-  doneMedal: {
+  goal: {
     alignItems: 'center',
     marginTop: 50,
     height: height / 5,
