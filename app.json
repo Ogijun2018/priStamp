@@ -5,7 +5,10 @@
     "slug": "priStamp",
     "privacy": "public",
     "sdkVersion": "31.0.0",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "githubUrl": "https://github.com/Ogijun2018/priStamp.git",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,7 +20,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "buildNumber": "1",
       "supportsTablet": true
@@ -26,6 +31,6 @@
       "versionCode": 1,
       "permissions": []
     },
-    "description": ""
+    "description": "プリッカソン 成果 #1"
   }
 }

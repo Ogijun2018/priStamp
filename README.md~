@@ -1,10 +1,13 @@
-# priStamp
+# dekita
+
+- Figma: https://www.figma.com/file/T9Uc4EWJlEixmLGXKURXwmgV/
+- Trello: https://trello.com/b/8zVaTGFT/%E3%81%A7%E3%81%8D%E3%81%9F
 
 ## 環境構築手順
 ※ 事前に Node.js と yarn　をグローバルにインストールする。
 
 ```
-$ git clone
+$ git@github.com:eishis/dekita.git
 $ cd dekita
 $ yarn install
 $ yarn start
