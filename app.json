@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "priStamp",
+    "icon": "",
+    "slug": "priStamp",
+    "privacy": "public",
+    "sdkVersion": "31.0.0",
+    "platforms": ["ios", "android"],
+    "githubUrl": "",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "image": "",
+      "resizeMode": "contain",
+      "backgroundColor": "#EC008C"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "buildNumber": "1",
+      "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 1,
+      "permissions": []
+    },
+    "description": ""
+  }
+}
