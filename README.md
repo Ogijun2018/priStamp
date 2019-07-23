@@ -5,7 +5,7 @@
 
 ```
 $ git clone
-$ cd dekita
+$ cd priStamp
 $ yarn install
 $ yarn start
 ```
